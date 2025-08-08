@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Bengal Bite - Authentic Kolkata Cuisine</title>
+    
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- Google Fonts: Inter & Playfair Display -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+    
+     <link rel="stylesheet" href="style.css">
+</head>
+<body class="bg-gray-50 text-gray-800">
+
+    <!-- Header & Navigation -->
+    <header class="bg-white/80 backdrop-blur-lg shadow-md sticky top-0 z-50">
+        <nav class="container mx-auto px-6 py-4 flex justify-between items-center">
+            <a href="#" class="text-3xl font-playfair font-bold text-amber-800">The Bengal Bite</a>
+            <div class="hidden md:flex space-x-8 items-center">
+                <a href="#home" class="text-gray-600 hover:text-amber-700 transition duration-300">Home</a>
+                <a href="#about" class="text-gray-600 hover:text-amber-700 transition duration-300">About</a>
+                <a href="#menu" class="text-gray-600 hover:text-amber-700 transition duration-300">Menu</a>
+                <a href="#contact" class="text-gray-600 hover:text-amber-700 transition duration-300">Contact</a>
+                <a href="#contact" class="bg-amber-600 text-white px-5 py-2 rounded-full hover:bg-amber-700 transition duration-300 shadow-lg">Book a Table</a>
+            </div>
+            <!-- Mobile Menu Button -->
+            <button id="mobile-menu-button" class="md:hidden text-gray-700 focus:outline-none">
+                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path></svg>
+            </button>
+        </nav>
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="hidden md:hidden px-6 pb-4">
+            <a href="#home" class="text-gray-600 hover:text-amber-700 transition duration-300">Home</a>
+            <a href="#about" class="block py-2 text-gray-600 hover:text-amber-700">About</a>
+            <a href="#menu" class="block py-2 text-gray-600 hover:text-amber-700">Menu</a>
+            <a href="#contact" class="block py-2 text-gray-600 hover:text-amber-700">Contact</a>
+            <a href="#contact" class="block mt-2 bg-amber-600 text-white text-center px-5 py-2 rounded-full hover:bg-amber-700">Book a Table</a>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero-bg h-[60vh] md:h-[80vh] flex items-center justify-center text-white text-center">
+        <div class="bg-black/30 p-8 rounded-lg">
+            <h1 class="text-4xl md:text-6xl lg:text-7xl font-playfair font-bold mb-4 drop-shadow-lg">A Taste of Authentic Bengal</h1><br>
+            <p class="text-lg md:text-xl max-w-2xl mx-auto mb-8 drop-shadow-md">Experience the rich culinary heritage of Kolkata, crafted with love and the finest local spices.</p>
+            <!-- <a href="#menu" class="bg-amber-600 text-white px-8 py-3 rounded-full text-lg font-semibold hover:bg-amber-700 transition duration-300 shadow-xl">Explore Our Menu</a> -->
+        </div>
+        <!-- Image Placeholder
+                <div class="w-full md:w-1/2">
+                    <img src="/assests/1.png" alt="A platter of authentic Bengali food" class="rounded-lg shadow-xl w-full h-full object-cover" onerror="this.onerror=null;this.src='https://placehold.co/600x500/cccccc/ffffff?text=Image+Not+Found';">
+                </div> -->
+    </section>
+
+    <!-- About Us Section -->
+    <section id="about" class="py-20 bg-white">
+        <div class="container mx-auto px-6 text-center">
+            <h2 class="text-4xl font-playfair font-bold text-gray-800 mb-6">Our Story</h2>
+            <p class="max-w-3xl mx-auto text-gray-600 leading-relaxed">
+                Nestled in the heart of Kolkata, The Bengal Bite was born from a passion for preserving the timeless recipes passed down through generations. We believe in the magic of 'gorom-gorom' (piping hot) food, the warmth of hospitality, and the joy of a shared meal. Our chefs use traditional techniques and locally-sourced ingredients to bring you a truly authentic and unforgettable dining experience.
+            </p>
+        </div>
+    </section>
+
+    <!-- Signature Dishes Section -->
+    <section id="menu" class="py-20">
+        <div class="container mx-auto px-6">
+            <div class="text-center mb-12">
+                <h2 class="text-4xl font-playfair font-bold text-gray-800 mb-4">Signature Dishes</h2>
+                <p class="text-gray-600">A curated selection of Kolkata's most beloved delicacies.</p>
+            </div>
+            
+            <!-- Dishes Grid -->
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-10">
+                
+                <!-- Dish 1: Kosha Mangsho -->
+                <div class="dish-card bg-white rounded-lg shadow-lg overflow-hidden">
+                    <!-- Updated Image -->
+                    <img src="/assests/kosha.jpg" alt="Kosha Mangsho" class="w-full h-56 object-cover" onerror="this.onerror=null;this.src='https://placehold.co/600x400/cccccc/ffffff?text=Image+Not+Found';">
+                    <div class="p-6">
+                        <h3 class="text-2xl font-playfair font-bold mb-2">Kosha Mangsho</h3>
+                        <p class="text-gray-600 mb-4 text-sm">Slow-cooked mutton in a rich, spicy gravy. A true Bengali classic, best enjoyed with luchi or rice.</p>
+                        <p class="text-xl font-bold text-amber-700">₹450</p>
+                    </div>
+                </div>
+
+                <!-- Dish 2: Ilish Bhapa -->
+                <div class="dish-card bg-white rounded-lg shadow-lg overflow-hidden">
+                    <!-- Updated Image -->
+                    <img src="/assests/ilish.jpeg" alt="Ilish Bhapa" class="w-full h-56 object-cover" onerror="this.onerror=null;this.src='https://placehold.co/600x400/cccccc/ffffff?text=Image+Not+Found';">
+                    <div class="p-6">
+                        <h3 class="text-2xl font-playfair font-bold mb-2">Ilish Bhapa</h3>
+                        <p class="text-gray-600 mb-4 text-sm">Hilsa fish steamed to perfection with a pungent mustard paste and green chillies. The king of fish!</p>
+                        <p class="text-xl font-bold text-amber-700">₹650</p>
+                    </div>
+                </div>
+
+                <!-- Dish 3: Chingri Malai Curry -->
+                <div class="dish-card bg-white rounded-lg shadow-lg overflow-hidden">
+                    <!-- Updated Image -->
+                    <img src="/assests/chingri.jpg" alt="Chingri Malai Curry" class="w-full h-56 object-cover" onerror="this.onerror=null;this.src='https://placehold.co/600x400/cccccc/ffffff?text=Image+Not+Found';">
+                    <div class="p-6">
+                        <h3 class="text-2xl font-playfair font-bold mb-2">Chingri Malai Curry</h3>
+                        <p class="text-gray-600 mb-4 text-sm">Succulent prawns cooked in a creamy, aromatic coconut milk gravy with mild spices.</p>
+                        <p class="text-xl font-bold text-amber-700">₹520</p>
+                    </div>
+                </div>
+
+                <!-- Dish 4: Kolkata Biryani -->
+                <div class="dish-card bg-white rounded-lg shadow-lg overflow-hidden">
+                    <!-- Updated Image -->
+                    <img src="https://images.unsplash.com/photo-1631515243349-e0cb75fb8d3a?q=80&w=2070&auto=format&fit=crop" alt="Kolkata Biryani" class="w-full h-56 object-cover" onerror="this.onerror=null;this.src='https://placehold.co/600x400/cccccc/ffffff?text=Image+Not+Found';">
+                    <div class="p-6">
+                        <h3 class="text-2xl font-playfair font-bold mb-2">Kolkata Biryani</h3>
+                        <p class="text-gray-600 mb-4 text-sm">Fragrant long-grain rice, tender meat, and the signature boiled potato and egg. Subtly spiced and delicious.</p>
+                        <p class="text-xl font-bold text-amber-700">₹380</p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact & Location Section -->
+    <section id="contact" class="py-20 bg-white">
+        <div class="container mx-auto px-6">
+            <div class="text-center mb-12">
+                <h2 class="text-4xl font-playfair font-bold text-gray-800 mb-4">Visit Us or Get in Touch</h2>
+                <p class="text-gray-600">We'd love to welcome you!</p>
+            </div>
+            <div class="flex flex-wrap -mx-4">
+                <!-- Contact Info -->
+                <div class="w-full lg:w-1/2 px-4 mb-8 lg:mb-0">
+                    <div class="bg-gray-100 p-8 rounded-lg h-full">
+                        <h3 class="text-2xl font-bold mb-4">Our Location</h3>
+                        <p class="mb-2">123, Park Street, Kolkata, West Bengal 700016</p>
+                        <p class="mb-2"><strong>Phone:</strong> +91 98765 43210</p>
+                        <p class="mb-6"><strong>Email:</strong> reservations@thebengalbite.com</p>
+                        
+                        <h3 class="text-2xl font-bold mb-4">Opening Hours</h3>
+                        <p class="mb-2"><strong>Lunch:</strong> 12:00 PM - 3:00 PM</p>
+                        <p><strong>Dinner:</strong> 7:00 PM - 11:00 PM</p>
+                    </div>
+                </div>
+                <!-- Contact Form -->
+                <div class="w-full lg:w-1/2 px-4">
+                    <div class="bg-gray-100 p-8 rounded-lg">
+                        <h3 class="text-2xl font-bold mb-4">Book Your Table</h3>
+                        <form>
+                            <div class="mb-4">
+                                <label for="name" class="block text-sm font-medium text-gray-700 mb-1">Name</label>
+                                <input type="text" id="name" name="name" class="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-amber-500" required>
+                            </div>
+                            <div class="mb-4">
+                                <label for="email" class="block text-sm font-medium text-gray-700 mb-1">Email</label>
+                                <input type="email" id="email" name="email" class="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-amber-500" required>
+                            </div>
+                            <div class="mb-4">
+                                <label for="message" class="block text-sm font-medium text-gray-700 mb-1">Special Requests</label>
+                                <textarea id="message" name="message" rows="4" class="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-amber-500"></textarea>
+                            </div>
+                            <button type="submit" class="w-full bg-amber-600 text-white px-6 py-3 rounded-md font-semibold hover:bg-amber-700 transition duration-300">Send Request</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white py-8">
+        <div class="container mx-auto px-6 text-center">
+            <p>&copy; 2024 The Bengal Bite. All Rights Reserved.</p>
+            <p class="text-sm text-gray-400 mt-2">Crafted with ❤️ in the City of Joy</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
